@@ -10,3 +10,12 @@ TEST_CASE("Jogo indefinido - apenas um X", "[velha]") {
     };
     REQUIRE(verificar_jogo_velha(matriz) == -1);
 }
+
+TEST_CASE("X vence na primeira linha", "[velha]") {
+    int matriz[3][3] = {
+        {1, 1, 1},
+        {2, 2, 0},
+        {0, 0, 0}
+    };
+    REQUIRE(verificar_jogo_velha(matriz) == 1);
+}
