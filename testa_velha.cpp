@@ -28,3 +28,12 @@ TEST_CASE("X vence na primeira coluna", "[velha]") {
     };
     REQUIRE(verificar_jogo_velha(matriz) == 1);
 }
+
+TEST_CASE("O vence na segunda linha", "[velha]") {
+    int matriz[3][3] = {
+        {1, 1, 0},
+        {2, 2, 2},
+        {1, 0, 0}
+    };
+    REQUIRE(verificar_jogo_velha(matriz) == 2);
+}
