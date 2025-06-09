@@ -1,2 +1,6 @@
-int romanos_para_decimal(char const * num_romano);
- 
+#ifndef VELHA_HPP
+#define VELHA_HPP
+
+int verificar_jogo_velha(int matriz[3][3]);
+
+#endif

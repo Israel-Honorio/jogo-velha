@@ -1,6 +1,5 @@
-#include "romanos.hpp"
-int romanos_para_decimal(char const * num_romano)
-{
-  return 0; 
+#include "velha.hpp"
+
+int verificar_jogo_velha(int matriz[3][3]) {
+    return -1;  // Implementação inicial que sempre retorna indefinido
 }
- 
