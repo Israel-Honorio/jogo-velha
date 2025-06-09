@@ -8,6 +8,6 @@ int verificar_jogo_velha(int matriz[3][3]) {
             if (matriz[i][0] == 2) return 2;
         }
     }
-    
+
     return -1;  // Por enquanto, retorna indefinido para outros casos
 }
