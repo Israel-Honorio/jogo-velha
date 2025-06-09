@@ -9,5 +9,13 @@ int verificar_jogo_velha(int matriz[3][3]) {
         }
     }
 
-    return -1;  // Por enquanto, retorna indefinido para outros casos
+    // Verificar colunas
+    for (int j = 0; j < 3; j++) {
+        if (matriz[0][j] == matriz[1][j] && matriz[1][j] == matriz[2][j]) {
+            if (matriz[0][j] == 1) return 1;
+            if (matriz[0][j] == 2) return 2;
+        }
+    }
+
+    return -1;
 }
