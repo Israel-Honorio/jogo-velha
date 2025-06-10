@@ -106,13 +106,11 @@ TEST_CASE("X vence na segunda linha", "[velha]") {
 TEST_CASE("X vence na terceira linha", "[velha]") {
     int matriz[3][3] = {
         {2, 2, 0},
-        {0, 0, 2},
+        {0, 0, 0},
         {1, 1, 1}
     };
     REQUIRE(verificar_jogo_velha(matriz) == 1);
 }
-
-
 
 TEST_CASE("X vence na segunda coluna", "[velha]") {
     int matriz[3][3] = {
