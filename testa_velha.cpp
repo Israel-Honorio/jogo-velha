@@ -46,3 +46,12 @@ TEST_CASE("X vence na diagonal principal", "[velha]") {
     };
     REQUIRE(verificar_jogo_velha(matriz) == 1);
 }
+
+TEST_CASE("Jogo empatado - tabuleiro cheio sem vencedor", "[velha]") {
+    int matriz[3][3] = {
+        {1, 2, 1},
+        {2, 2, 1},
+        {2, 1, 2}
+    };
+    REQUIRE(verificar_jogo_velha(matriz) == 0);
+}
