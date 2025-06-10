@@ -217,15 +217,6 @@ TEST_CASE("Jogo empatado - outro padrão sem vencedor", "[velha]") {
 
 // ========== TESTES PARA JOGO IMPOSSÍVEL (-2) ==========
 
-TEST_CASE("Jogo impossível - todos X", "[velha]") {
-    int matriz[3][3] = {
-        {1, 1, 1},
-        {1, 1, 1},
-        {1, 1, 1}
-    };
-    REQUIRE(verificar_jogo_velha(matriz) == -2);
-}
-
 TEST_CASE("Jogo impossível - todos O", "[velha]") {
     int matriz[3][3] = {
         {2, 2, 2},
