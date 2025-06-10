@@ -55,3 +55,12 @@ TEST_CASE("Jogo empatado - tabuleiro cheio sem vencedor", "[velha]") {
     };
     REQUIRE(verificar_jogo_velha(matriz) == 0);
 }
+
+TEST_CASE("Jogo impossível - todos X", "[velha]") {
+    int matriz[3][3] = {
+        {1, 1, 1},
+        {1, 1, 1},
+        {1, 1, 1}
+    };
+    REQUIRE(verificar_jogo_velha(matriz) == -2);
+}
