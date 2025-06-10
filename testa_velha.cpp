@@ -139,6 +139,8 @@ TEST_CASE("X vence na diagonal secundária", "[velha]") {
     REQUIRE(verificar_jogo_velha(matriz) == 1);
 }
 
+
+
 // ========== TESTES PARA O VENCE (2) ==========
 
 TEST_CASE("O vence na primeira linha", "[velha]") {
