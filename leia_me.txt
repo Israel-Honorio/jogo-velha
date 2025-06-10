@@ -1,2 +1,24 @@
-﻿com o g++ e o make e demais programas instalados 
-digite "make" neste diretório 
+﻿Jogo da velha com TDD
+
+AUTOR: Israel Honório de Castro - 231003498
+
+Para compilar o arquivo principal, os testes e executá-los:
+
+make all
+Para analisar vazamentos de memória estáticos e dinâmicos:
+
+make gcov
+Para analisar vazamentos de memória estáticos e sonoros:
+
+make cppcheck
+Para verificar os padrões de formatação do código:
+
+make cpplint
+
+Documentação
+Este trabalho desenvolve um verificador para o resultado de um jogo da velha utilizando os princípios do Desenvolvimento Orientado a Testes (TDD). Ele considera cinco cenários:
+Impossível: quando o jogo tem dois ou mais movimentos à frente para um jogador; quando o jogo tem mais de um vencedor; ou quando o perdedor fez mais movimentos que o vencedor.
+Indefinido: Quando ainda há jogadas a serem feitas (espaços vazios) e ninguém venceu.
+Empate: Quando não há mais movimentos a serem feitos (nenhum espaço vazio) e ninguém venceu.
+Vitória de X: Quando X preenche uma linha, uma coluna ou uma diagonal apenas com seus elementos.
+Vitória de O: Quando O preenche uma linha, uma coluna ou uma diagonal apenas com seus elementos.
