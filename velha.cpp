@@ -8,7 +8,7 @@ int verificar_jogo_velha(int matriz[3][3]) {
             if (matriz[i][0] == 2) return 2;
         }
     }
-    
+
     // Verificar colunas
     for (int j = 0; j < 3; j++) {
         if (matriz[0][j] == matriz[1][j] && matriz[1][j] == matriz[2][j]) {
@@ -16,19 +16,19 @@ int verificar_jogo_velha(int matriz[3][3]) {
             if (matriz[0][j] == 2) return 2;
         }
     }
-    
+
     // Verificar diagonal principal
     if (matriz[0][0] == matriz[1][1] && matriz[1][1] == matriz[2][2]) {
         if (matriz[0][0] == 1) return 1;
         if (matriz[0][0] == 2) return 2;
     }
-    
+
     // Verificar diagonal secundária
     if (matriz[0][2] == matriz[1][1] && matriz[1][1] == matriz[2][0]) {
         if (matriz[0][2] == 1) return 1;
         if (matriz[0][2] == 2) return 2;
     }
-    
+
     // Verificar se há empate (tabuleiro cheio)
     bool tabuleiro_cheio = true;
     for (int i = 0; i < 3; i++) {
@@ -40,8 +40,8 @@ int verificar_jogo_velha(int matriz[3][3]) {
         }
         if (!tabuleiro_cheio) break;
     }
-    
+
     if (tabuleiro_cheio) return 0;  // Empate
-    
+
     return -1;  // Jogo indefinido
 }
